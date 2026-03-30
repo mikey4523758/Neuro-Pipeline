@@ -4,7 +4,7 @@
 
 ---
 
-## 🧠 What This Project Does
+##  What This Project Does
 
 This pipeline takes raw EEG recordings and produces trained machine learning models capable of classifying **left vs. right hand motor imagery** — a core task in non-invasive BCI systems used in assistive technology, neurofeedback, and neural prosthetics research.
 
@@ -12,7 +12,7 @@ Every stage of the pipeline reflects industry-standard signal processing practic
 
 ---
 
-## 🔬 Scientific Overview
+##  Scientific Overview
 
 The pipeline implements the canonical BCI processing chain:
 
@@ -28,7 +28,7 @@ The pipeline implements the canonical BCI processing chain:
 
 ---
 
-## 🏗 Architecture
+##  Architecture
 ```
 neuro-pipeline/
 ├── configs/
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 Usage
+##  Usage
 ```bash
 # Run with default config
 python main.py
@@ -65,7 +65,7 @@ All parameters — subject ID, frequency bands, train/test split, model hyperpar
 
 ---
 
-## 📊 Results
+##  Results
 
 | Model | Accuracy |
 |---|---|
@@ -76,7 +76,7 @@ All parameters — subject ID, frequency bands, train/test split, model hyperpar
 
 ---
 
-## 🧰 Tech Stack
+##  Tech Stack
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue)
 ![MNE](https://img.shields.io/badge/MNE--Python-1.x-purple)
@@ -100,7 +100,7 @@ All parameters — subject ID, frequency bands, train/test split, model hyperpar
 
 ---
 
-## 📚 Dataset
+##  Dataset
 
 **PhysioNet EEG Motor Movement/Imagery Dataset**
 - 109 subjects, 64-channel EEG recorded at 160 Hz
