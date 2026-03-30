@@ -1,0 +1,28 @@
+# EEG Pipeline Configuration
+data:
+  subject: 1
+  runs: [4, 8, 12] # Right vs Left hand motor imagery
+  tmin: -1.0
+  tmax: 4.0
+
+preprocessing:
+  l_freq: 7.0
+  h_freq: 30.0
+  notch_freq: 60.0
+  reference: 'average'
+
+features:
+  bands:
+    alpha: [8, 13]
+    beta: [13, 30]
+  method: 'welch'
+
+model:
+  test_size: 0.2
+  random_state: 42
+  svm_params:
+    C: 1.0
+    kernel: 'linear'
+  rf_params:
+    n_estimators: 100
+    max_depth: 10
